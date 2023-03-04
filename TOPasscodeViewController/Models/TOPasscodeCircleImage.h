@@ -52,6 +52,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)hollowCircleImageOfSize:(CGFloat)size strokeWidth:(CGFloat)strokeWidth padding:(CGFloat)padding;
 
++ (UIImage *)ractangleImageOfSize:(CGFloat)size inset:(CGFloat)inset padding:(CGFloat)padding antialias:(BOOL)antialias;
+
++ (UIImage *)hollowRectangleImageOfSize:(CGFloat)size strokeWidth:(CGFloat)strokeWidth padding:(CGFloat)padding;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -221,7 +221,7 @@
 - (UIImage *)buttonImage
 {
     if (!_buttonImage) {
-        _buttonImage = [TOPasscodeCircleImage hollowCircleImageOfSize:self.buttonDiameter strokeWidth:self.buttonStrokeWidth padding:1.0f];
+        _buttonImage = [TOPasscodeCircleImage hollowRectangleImageOfSize:self.buttonDiameter strokeWidth:self.buttonStrokeWidth padding:1.0f];
     }
 
     return _buttonImage;
@@ -230,7 +230,7 @@
 - (UIImage *)tappedButtonImage
 {
     if (!_tappedButtonImage) {
-        _tappedButtonImage = [TOPasscodeCircleImage circleImageOfSize:self.buttonDiameter inset:self.buttonStrokeWidth * 0.5f padding:1.0f antialias:YES];
+        _tappedButtonImage = [TOPasscodeCircleImage ractangleImageOfSize:self.buttonDiameter inset:self.buttonStrokeWidth * 0.5f padding:1.0f antialias:YES];
     }
 
     return _tappedButtonImage;
